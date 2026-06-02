@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <title>Men's Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0f0f0f] text-white overflow-x-hidden">
+
+    <!-- Navbar Section -->
+
+
+    <nav class="navbar fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+
+        <div class="w-full mx-auto px-6">
+
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+
+                <a href="#hero" class="flex flex-col">
+
+                    <span class="text-white text-2xl font-black uppercase tracking-wider">
+                        Style Hub
+                    </span>
+
+                    <span class="text-[#c8a45d] text-[10px] uppercase tracking-[4px]">
+                        Men's Salon
+                    </span>
+
+                </a>
+
+                <!-- Desktop Menu -->
+
+                <ul class="hidden lg:flex items-center gap-8">
+
+                    <li>
+                        <a href="#hero" class="hover:text-[#c8a45d] transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="hover:text-[#c8a45d] transition">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="hover:text-[#c8a45d] transition">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#location" class="hover:text-[#c8a45d] transition">
+                            Location
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Desktop Button -->
+
+                <a href="#contact"
+                    class="hidden lg:inline-flex bg-[#c8a45d] text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
+                    Book Now
+                </a>
+
+                <!-- Mobile Button -->
+
+                <button id="menuBtn" class="lg:hidden text-white text-3xl">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobileMenu"
+        class="hidden fixed top-20 left-0 w-full bg-black/95 backdrop-blur-md z-40 lg:hidden border-t border-white/10">
+
+        <div class="flex flex-col p-6 gap-6">
+
+            <a href="#hero" class="text-lg hover:text-[#c8a45d]">
+                Home
+            </a>
+
+            <a href="#services" class="text-lg hover:text-[#c8a45d]">
+                Services
+            </a>
+
+            <a href="#contact" class="text-lg hover:text-[#c8a45d]">
+                Contact
+            </a>
+
+            <a href="#location" class="text-lg hover:text-[#c8a45d]">
+                Location
+            </a>
+
+            <a href="#contact" class="bg-[#c8a45d] text-black text-center py-3 rounded-full font-semibold">
+                Book Appointment
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Hero Section -->
+
+    <section
+        id="hero"
+        class="hero overflow-hidden min-h-screen flex flex-col lg:flex-row items-center justify-between gap-12 px-6 lg:px-[8%] pt-[120px] bg-[#0f0f0f] text-white">
+
+        <div class="hero-content flex-1">
+
+            <h1 class="hero-title font-['Bebas_Neue'] text-[clamp(4rem,8vw,8rem)] leading-[0.9]">
+                MASTER THE ART
+                <br>
+                OF GROOMING
+            </h1>
+
+            <p class="mt-6 mb-8 text-[#bdbdbd] max-w-[500px]">
+                Premium haircuts, beard styling and luxury grooming experiences.
+            </p>
+
+            <a href="#contact"
+                class="hero-btn inline-block bg-[#c8a45d] text-black px-6 py-3 rounded-full font-semibold">
+                Book Appointment
+            </a>
+
+        </div>
+
+        <div class="hero-image flex-1">
+
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1200&auto=format&fit=crop"
+                alt="" class="w-full rounded-[20px]">
+
+        </div>
+
+    </section>
+
+    <!-- Services section -->
+
+    <section id="services" class="py-[120px] px-6 lg:px-[8%] bg-[#0f0f0f] text-white">
+
+        <div class="text-center mb-24">
+
+            <h2 class="font-['Bebas_Neue'] text-[clamp(3rem,6vw,6rem)]">
+                OUR SERVICES
+            </h2>
+
+        </div>
+
+        <!-- Services -->
+
+        <div class="service-item flex flex-col lg:flex-row items-center gap-20 mb-28">
+
+            <div class="flex-1">
+
+                <span class="text-[#c8a45d] text-xl">
+                    01
+                </span>
+
+                <h3 class="font-['Bebas_Neue'] text-4xl md:text-6xl my-4">
+                    Haircut
+                </h3>
+
+                <p class="text-[#bdbdbd]">
+                    Modern fades, classic cuts and personalized styling.
+                </p>
+
+            </div>
+
+            <div class="flex-1 overflow-hidden rounded-3xl">
+
+                <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1200&auto=format&fit=crop"
+                    class="w-full h-[500px] object-cover hover:scale-110 duration-700">
+
+            </div>
+
+        </div>
+
+        <div class="service-item flex flex-col lg:flex-row-reverse items-center gap-20 mb-32">
+
+            <div class="flex-1">
+
+                <span class="text-[#c8a45d] text-xl">02</span>
+
+                <h3 class="font-['Bebas_Neue'] text-4xl md:text-6xl my-4">
+                    Beard Styling
+                </h3>
+
+                <p class="text-[#bdbdbd]">
+                    Precision trimming and shaping to maintain
+                    a sharp, masculine appearance.
+                </p>
+
+            </div>
+
+            <div class="service-image flex-1 overflow-hidden rounded-3xl">
+
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop"
+                    class="w-full h-[500px] object-cover hover:scale-110 duration-700">
+
+            </div>
+
+        </div>
+
+        <div class="service-item flex flex-col lg:flex-row items-center gap-20 mb-32">
+
+            <div class="flex-1">
+
+                <span class="text-[#c8a45d] text-xl">03</span>
+
+                <h3 class="font-['Bebas_Neue'] text-4xl md:text-6xl my-4">
+                    Hair Spa
+                </h3>
+
+                <p class="text-[#bdbdbd]">
+                    Deep nourishment and scalp treatment
+                    for stronger, healthier hair.
+                </p>
+
+            </div>
+
+            <div class="service-image flex-1 overflow-hidden rounded-3xl">
+
+                <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop"
+                    class="w-full h-[500px] object-cover hover:scale-110 duration-700">
+
+            </div>
+
+        </div>
+
+        <div class="service-item flex flex-col lg:flex-row-reverse items-center gap-20 mb-32">
+
+            <div class="flex-1">
+
+                <span class="text-[#c8a45d] text-xl">04</span>
+
+                <h3 class="font-['Bebas_Neue'] text-4xl md:text-6xl my-4">
+                    Facial Treatment
+                </h3>
+
+                <p class="text-[#bdbdbd]">
+                    Refresh and rejuvenate your skin with
+                    deep cleansing and hydration.
+                </p>
+
+            </div>
+
+            <div class="service-image flex-1 overflow-hidden rounded-3xl">
+
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop"
+                    class="w-full h-[500px] object-cover hover:scale-110 duration-700">
+
+            </div>
+
+        </div>
+
+        <div class="service-item flex flex-col lg:flex-row items-center gap-20 mb-32">
+
+            <div class="flex-1">
+
+                <span class="text-[#c8a45d] text-xl">05</span>
+
+                <h3 class="font-['Bebas_Neue'] text-4xl md:text-6xl my-4">
+                    Head Massage
+                </h3>
+
+                <p class="text-[#bdbdbd]">
+                    Relax your mind and improve circulation
+                    through premium scalp massage therapy.
+                </p>
+
+            </div>
+
+            <div class="service-image flex-1 overflow-hidden rounded-3xl">
+
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop"
+                    class="w-full h-[500px] object-cover hover:scale-110 duration-700">
+
+            </div>
+
+        </div>
+
+        <div class="service-item flex flex-col lg:flex-row-reverse items-center gap-20">
+
+            <div class="flex-1">
+
+                <span class="text-[#c8a45d] text-xl">06</span>
+
+                <h3 class="font-['Bebas_Neue'] text-4xl md:text-6xl my-4">
+                    Hair Coloring
+                </h3>
+
+                <p class="text-[#bdbdbd]">
+                    Grey coverage, fashion colors, and
+                    personalized styling consultations.
+                </p>
+
+            </div>
+
+            <div class="service-image flex-1 overflow-hidden rounded-3xl">
+
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=1200&auto=format&fit=crop"
+                    class="w-full h-[500px] object-cover hover:scale-110 duration-700">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Form -->
+
+    <section id="contact" class="py-32 px-6 lg:px-[8%] bg-[#0a0a0a]">
+    
+        <div class="w-full mx-auto">
+    
+            <div class="text-center mb-20">
+    
+                <span class="text-[#c8a45d] tracking-[4px] uppercase">
+                    Book Appointment
+                </span>
+    
+                <h2 class="font-['Bebas_Neue'] text-[clamp(3rem,6vw,6rem)] mt-3">
+                    Contact Us
+                </h2>
+    
+            </div>
+    
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+    
+                <!-- Left Side -->
+    
+                <div>
+    
+                    <h3 class="font-['Bebas_Neue'] text-5xl mb-6">
+                        Let's Get You Looking Sharp
+                    </h3>
+    
+                    <p class="text-gray-400 leading-8">
+    
+                        Book your next haircut, beard styling,
+                        facial treatment, or hair spa session.
+    
+                        Fill out the form and we'll connect
+                        with you instantly on WhatsApp.
+    
+                    </p>
+    
+                    <div class="mt-10 space-y-4">
+    
+                        <p>
+                            📍 Your Salon Address
+                        </p>
+    
+                        <p>
+                            📞 +91 98765 43210
+                        </p>
+    
+                        <p>
+                            ✉ contact@yoursalon.com
+                        </p>
+    
+                    </div>
+    
+                </div>
+    
+                <!-- Right Side -->
+    
+                <form id="bookingForm" class="space-y-5">
+    
+                    <input type="text" id="name" placeholder="Your Name" required
+                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none">
+    
+                    <input type="tel" id="phone" placeholder="Phone Number" required
+                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none">
+    
+                    <select id="service"
+                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none">
+    
+                        <option>Haircut</option>
+                        <option>Beard Styling</option>
+                        <option>Hair Spa</option>
+                        <option>Facial Treatment</option>
+                        <option>Head Massage</option>
+                        <option>Hair Coloring</option>
+    
+                    </select>
+    
+                    <input type="date" id="date"
+                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none">
+    
+                    <input type="time" id="time"
+                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none">
+    
+                    <textarea id="message" rows="5" placeholder="Additional Notes"
+                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none resize-none"></textarea>
+    
+                    <button type="submit"
+                        class="w-full bg-[#c8a45d] text-black py-4 rounded-full font-semibold cursor-pointer">
+                        Book On WhatsApp
+                    </button>
+    
+                </form>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!-- Location/Map -->
+
+    <section id="location" class="py-32 px-6 lg:px-[8%] bg-[#0f0f0f]">
+    
+        <div class="w-full mx-auto">
+    
+            <div class="text-center mb-16">
+    
+                <span class="text-[#c8a45d] tracking-[4px] uppercase">
+                    Find Us
+                </span>
+    
+                <h2 class="font-['Bebas_Neue'] text-[clamp(3rem,6vw,6rem)] mt-3">
+                    Our Location
+                </h2>
+    
+            </div>
+    
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+    
+                <!-- Info -->
+    
+                <div>
+    
+                    <h3 class="font-['Bebas_Neue'] text-5xl mb-6">
+                        Visit Our Salon
+                    </h3>
+    
+                    <p class="text-gray-400 leading-8 mb-8">
+    
+                        Experience premium grooming services in a
+                        comfortable and luxurious environment.
+    
+                    </p>
+    
+                    <div class="space-y-5">
+    
+                        <div>
+                            <h4 class="text-[#c8a45d]">
+                                Address
+                            </h4>
+    
+                            <p class="text-gray-300">
+                                123 Main Street,
+                                Your City, India
+                            </p>
+                        </div>
+    
+                        <div>
+                            <h4 class="text-[#c8a45d]">
+                                Working Hours
+                            </h4>
+    
+                            <p class="text-gray-300">
+                                Mon - Sun : 10 AM - 9 PM
+                            </p>
+                        </div>
+    
+                        <div>
+                            <h4 class="text-[#c8a45d]">
+                                Contact
+                            </h4>
+    
+                            <p class="text-gray-300">
+                                +91 98765 43210
+                            </p>
+                        </div>
+
+                        <a
+                            href="https://www.google.com/maps/dir/?api=1&destination=26.8467,80.9462"
+                            target="_blank"
+                            class="direction-btn relative inline-flex items-center gap-3 mt-8 px-8 py-4 rounded-full font-semibold overflow-hidden bg-[#c8a45d] text-black"
+                        >
+                            <span class="relative z-10">
+                                Get Directions
+                            </span>
+
+                            <span class="relative z-10 text-xl">
+                                →
+                            </span>
+
+                            <span class="btn-bg absolute inset-0 bg-white"></span>
+
+                        </a>
+
+                    </div>
+    
+                </div>
+    
+                <!-- Map -->
+    
+                <div class="overflow-hidden rounded-[30px] border border-[#2a2a2a]">
+    
+                    <iframe src="https://www.google.com/maps?q=Lucknow&output=embed" width="100%" height="500"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer bg-black border-t border-white/10 py-20 px-6 lg:px-[8%]">
+    
+        <div class="w-full mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+    
+            <!-- Brand -->
+    
+            <div>
+    
+                <img src="./images/salon_logo.jpeg" alt="Logo" class="w-24 h-24 rounded-full object-cover mb-6">
+    
+                <p class="text-gray-400 leading-7">
+                    Premium grooming experiences crafted
+                    for the modern gentleman.
+                </p>
+    
+            </div>
+    
+            <!-- Quick Links -->
+    
+            <div>
+    
+                <h4 class="text-[#c8a45d] text-xl mb-6">
+                    Quick Links
+                </h4>
+    
+                <ul class="space-y-3">
+    
+                    <li>
+                        <a href="#hero" class="text-gray-400 hover:text-white">
+                            Home
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#services" class="text-gray-400 hover:text-white">
+                            Services
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#contact" class="text-gray-400 hover:text-white">
+                            Contact
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#location" class="text-gray-400 hover:text-white">
+                            Location
+                        </a>
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+            <!-- Services -->
+    
+            <div>
+    
+                <h4 class="text-[#c8a45d] text-xl mb-6">
+                    Services
+                </h4>
+    
+                <ul class="space-y-3 text-gray-400">
+    
+                    <li>Haircut</li>
+                    <li>Beard Styling</li>
+                    <li>Hair Spa</li>
+                    <li>Facial Treatment</li>
+                    <li>Hair Coloring</li>
+    
+                </ul>
+    
+            </div>
+    
+            <!-- Socials -->
+    
+            <div>
+    
+                <h4 class="text-[#c8a45d] text-xl mb-6">
+                    Connect
+                </h4>
+    
+                <ul class="space-y-3">
+    
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            Instagram
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            Facebook
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            WhatsApp
+                        </a>
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+        </div>
+    
+        <!-- Bottom -->
+    
+        <div class="border-t border-white/10 mt-16 pt-8 text-center">
+    
+            <p class="text-gray-500">
+                © 2026 Groom Studio. All Rights Reserved.
+            </p>
+    
+        </div>
+    
+    </footer>
+
+    <!-- Scroll to Top Button -->
+     <button
+        id="scrollTop"
+        class="fixed bottom-8 right-8 w-14 h-14 rounded-full bg-[#c8a45d] text-black text-xl hidden z-50"
+    >
+        ↑
+    </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+
+    <script src="animation.js"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
