@@ -15,12 +15,17 @@
 
     <title>Men's Salon</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input[type="date"],
+        input[type="time"]{
+            color-scheme: dark;
+        }
+    </style>
 </head>
 
 <body class="bg-[#0f0f0f] text-white overflow-x-hidden">
 
     <!-- Navbar Section -->
-
 
     <nav class="navbar fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
 
@@ -389,13 +394,13 @@
                 <form id="bookingForm" class="space-y-5 w-full max-w-full overflow-hidden">
 
                     <input type="text" id="name" placeholder="Your Name" required
-                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none">
+                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-5 outline-none">
 
                     <input type="tel" id="phone" placeholder="Phone Number" required
-                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none">
+                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-5 outline-none">
 
                     <select id="service"
-                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none">
+                        class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-5 outline-none">
 
                         <option>Haircut</option>
                         <option>Beard Styling</option>
@@ -410,19 +415,17 @@
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-                        <div class="w-full overflow-hidden">
+                        <input
+                            type="date"
+                            id="date"
+                            class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-5 outline-none text-white appearance-none"
+                        >
 
-                            <input type="date" id="date"
-                                class="w-full min-w-0 bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none text-white">
-
-                        </div>
-
-                        <div class="w-full overflow-hidden">
-
-                            <input type="time" id="time"
-                                class="w-full min-w-0 bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-4 outline-none text-white">
-
-                        </div>
+                        <input
+                            type="time"
+                            id="time"
+                            class="w-full bg-[#181818] border border-[#2a2a2a] rounded-2xl px-5 py-5 outline-none text-white appearance-none"
+                        >
 
                     </div>
 
