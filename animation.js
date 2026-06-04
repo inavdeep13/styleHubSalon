@@ -16,6 +16,46 @@ requestAnimationFrame(raf);
 
 lenis.on("scroll", ScrollTrigger.update);
 
+/* LOADER */
+
+window.addEventListener("load", () => {
+
+    const loader = document.getElementById("loader");
+
+    const tl = gsap.timeline();
+
+    tl.from("#loaderImage", {
+        scale: 0,
+        opacity: 0,
+        duration: 1,
+        ease: "back.out(1.7)"
+    })
+
+    .to("#loaderContent", {
+        opacity: 1,
+        y: -10,
+        duration: .8
+    })
+
+    .to("#loaderImage", {
+        scale: 1.1,
+        duration: .8
+    });
+
+    setTimeout(() => {
+
+        gsap.to("#loader", {
+            opacity: 0,
+            duration: .8,
+            onComplete: () => {
+                loader.style.display = "none";
+            }
+        });
+
+    }, 4000);
+
+});
+
 /* NAVBAR */
 
 gsap.from(".navbar", {
