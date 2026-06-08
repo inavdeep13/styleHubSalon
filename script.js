@@ -53,7 +53,7 @@ Time: ${time}
 
 Message: ${message}`;
 
-    const salonNumber = "917087188474";
+    const salonNumber = "916283333495";
 
     window.open(
         `https://wa.me/${salonNumber}?text=${encodeURIComponent(whatsappMessage)}`,

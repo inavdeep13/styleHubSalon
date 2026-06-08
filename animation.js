@@ -52,7 +52,7 @@ window.addEventListener("load", () => {
             }
         });
 
-    }, 4000);
+    }, 3000);
 
 });
 
